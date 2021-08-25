@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Pic1 from './/blog2a1.png'
 import Pic2 from './/fakenews.png'
+import Pic3 from './/resulth3.png'
 export default function code1() {
   return (
     <div className="container"> 
@@ -22,7 +23,7 @@ export default function code1() {
 
         Head over to BBC news and inspect a news headline by right clicking and pressing inspect.
         As you&apos;ll see, all news headlines are contained within an &quot;h3&quot; tag:</div>
-        <div className="i1"><Image src={Pic1} className="i1" /></div>
+        <div className="i1"><Image src={Pic1} /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
         Now add these 4 lines of code to scrape and display all the h3 tags from BBC news:
@@ -37,10 +38,13 @@ export default function code1() {
         <ul>
         <li>First, we define <icode>soup</icode> as the innerHTML of the BBC news webpage.</li>
         <li>Next, we define <icode>headlines</icode> as an array of all h3 tags found within the webpage.</li>
-        <li>Finally, paddle through the <icode>headlines</icode> array and display all of it&apos;s contents one by one ridding each element of it&apos;s outerHTML using the <icode>text.strip()</icode> method.
-        Now if you run your script, your output should look something like this:</li>
+        <li>Finally, paddle through the <icode>headlines</icode> array and display all of it&apos;s contents one by one ridding each element of it&apos;s outerHTML using the <icode>text.strip()</icode> method.</li>
         </ul>
         </div>
+        <hr align="center" width="60%" className="hr8"></hr>
+        <div className="content2"><b>Now if you run your script, your output should look something like this:</b></div>
+        <div className="i1"><Image src={Pic3} /></div>
+
         <hr align="center" width="60%" className="hr8"></hr>
         <hr align="center" width="80%" className="hr8"></hr>
       <h3 className="foot">
