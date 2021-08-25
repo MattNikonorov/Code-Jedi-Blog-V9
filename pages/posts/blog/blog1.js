@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Pic1 from './/fun-fun-begins.gif'
 import Pic2 from './/fakenews.png'
 import Pic3 from './/realnews.png'
@@ -77,7 +78,7 @@ export default function code1() {
         <div className="content2">
         <b>Start detecting real or fake headlines!</b>
         </div>
-        <div className="i1"><img src={Pic1} className="i1" /></div>
+        <div className="i1"><Image src={Pic1} className="i1" /></div>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2">
         Now to predict wether a news headline is real or not, add these lines of code to your script:
@@ -93,7 +94,7 @@ export default function code1() {
         </code>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2">Now if you run your script, you should see that it has predicted that this news headline is fake:</div>
-        <div className="i1"><img src={Pic2}/></div>
+        <div className="i1"><Image src={Pic2}/></div>
         <hr align="center" width="40%" className="hr8"></hr>
         <div className="content2">
         Now let&apos;s take a random news headline from bbc news and see if our model classifies it as real:
@@ -101,7 +102,7 @@ export default function code1() {
         <code>
         news_headline = &quot;Kathy Hochul: Who is New York&apos;s first female governor?&quot;
         </code>
-        <div className="i1"><img src={Pic3}/></div>
+        <div className="i1"><Image src={Pic3}/></div>
         <div className="content2">
         <b>Now of course, this model is not perfect</b>
         <br></br>

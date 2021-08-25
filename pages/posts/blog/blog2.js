@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Pic1 from './/blog2a1.png'
 import Pic2 from './/fakenews.png'
 export default function code1() {
@@ -21,7 +22,7 @@ export default function code1() {
 
         Head over to BBC news and inspect a news headline by right clicking and pressing inspect.
         As you&apos;ll see, all news headlines are contained within an &quot;h3&quot; tag:</div>
-        <div className="i1"><img src={Pic1} className="i1" /></div>
+        <div className="i1"><Image src={Pic1} className="i1" /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">
         Now add these 4 lines of code to scrape and display all the h3 tags from BBC news:

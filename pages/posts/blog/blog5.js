@@ -1,4 +1,5 @@
 import Pic1 from './/wordcloud.png'
+import Image from 'next/image'
 export default function code1() {
   return (
     <div className="container"> 
@@ -90,7 +91,7 @@ export default function code1() {
         </div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2"><b>If you run your code, your wordcloud should look something like this:</b></div>
-        <div className="i1"><img src={Pic1} /></div>
+        <div className="i1"><Image src={Pic1} /></div>
         <div className="content2">
         <i>Of course, your wordcloud will probably be quite different since news headlines change all the time.</i>
         </div>

@@ -2,6 +2,7 @@ import Pic1 from './/tsla6.png'
 import Pic2 from './/tsla7.png'
 import Pic3 from './/tsla8.png'
 import Pic4 from './/tsla9.png'
+import Image from 'next/image'
 export default function code1() {
   return (
     <div className="container"> 
@@ -92,14 +93,14 @@ export default function code1() {
         For this next step, you will have to go to <a href="https://finance.yahoo.com/quote/TSLA?p=TSLA&.tsrc=fin-srch">Tesla stock price</a>, 
         right click on the current stock price and click on inspect:
         </div>
-        <div className="i1"><img src={Pic1}/></div>
+        <div className="i1"><Image src={Pic1}/></div>
         <div className="content2">A pop-up will appear on the right of your window, you will need to find the stock price element:</div>
-        <div className="i1"><img src={Pic2} /></div>
+        <div className="i1"><Image src={Pic2} /></div>
         <div className="content2">
         Next, you will need to right click on the stock price element and click on &quot;copy full Xpath&quot;.
         This will give us a way of accessing the stock price element:
         </div>
-        <div className="i1"><img src={Pic3} /></div>
+        <div className="i1"><Image src={Pic3} /></div>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">Once we have the Xpath of the stock price element, we can add these 3 lines of code into our function:</div>
         <code>
@@ -149,7 +150,7 @@ export default function code1() {
         </code>
         <hr align="center" width="60%" className="hr8"></hr>
         <div className="content2">If you were to execute your current code, you will find that when going to the url that you defined earlier, a pop-up will appear:</div>
-        <div className="i1"><img src={Pic4} /></div>
+        <div className="i1"><Image src={Pic4} /></div>
         <div className="content2">
         To get around this, plug these 2 lines of code into your function before defining the &quot;element&quot; variable:
         </div>

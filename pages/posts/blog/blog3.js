@@ -1,5 +1,6 @@
 import Pic1 from './/blog2a1.png'
 import Pic2 from './/fakenews.png'
+import Image from 'next/image'
 export default function code1() {
   return (
     <div className="container"> 
