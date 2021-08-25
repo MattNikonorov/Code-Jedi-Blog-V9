@@ -12,9 +12,13 @@ export default function code1() {
         <div className="content2">First of all, make sure to import these libraries at the beginning of your python script:</div>
         <code>
         import requests
+        <br></br>
         from bs4 import BeautifulSoup
-        For this tutorial, I&apos;ll be using BBC news as my news source, use these 2 lines of code to get it&apos;s url:
+        </code>
+        <div className="content2">For this tutorial, I&apos;ll be using BBC news as my news source, use these 2 lines of code to get it&apos;s url using the requests module:</div>
+        <code>
         url=&apos;https://www.bbc.com/news&apos;
+        <br></br>
         response = requests.get(url)
         </code>
         <hr align="center" width="60%" className="hr8"></hr>
@@ -30,9 +34,12 @@ export default function code1() {
         </div>
         <code>
         soup = BeautifulSoup(response.text, &apos;html.parser&apos;)
+        <br></br>
         headlines = soup.find(&apos;body&apos;).find_all(&apos;h3&apos;)
+        <br></br>
         for x in headlines:
-            print(x.text.strip())
+        <br></br>
+        &#160;&#160;print(x.text.strip())
         </code>
         <div className="content2">
         <ul>
