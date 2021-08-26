@@ -69,7 +69,7 @@ export default function code1() {
         }
         a{
           color: lightseagreen;
-          font-size: 35px;
+          font-size: 24px;
         }
         code {
           margin-top: 2%;
